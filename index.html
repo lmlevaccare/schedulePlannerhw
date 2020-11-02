@@ -33,160 +33,186 @@
     </header>
     </head>
       <!-- Timeblocks go here -->
-      <div class="sticky-top"> ...</div>
-    <div class="container">
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label div="i" for="formGroupExampleInput2">8:00AM</label>
-      <input type="text" id="msg"class="form-control" placeholder="Event">
-    </div>
-    
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">9:00AM</label>
-      <input type="text" id="msg"class="form-control" placeholder="Event">
-    </div>
-  
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">10:00AM</label>
-      <input type="text" id="msg" class="form-control" placeholder="Event">
-    </div>
-  
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">11:00AM</label>
-      <input type="text" id="msg"class="form-control" placeholder="Event">
-    </div>
+      
+      <div class="container">
 
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">12:00PM</label>
-      <input type="text" id="msg"class="form-control" placeholder="Event">
-    </div>
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i"  for="formGroupExampleInput2">1:00PM</label>
-      <input type="text" id="msg"class="form-control" placeholder="Event">
-    </div>
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">2:00PM</label>
-      <input type="text" id="msg" class="form-control" placeholder="Event">
-    </div>
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">3:00PM</label>
-      <input type="text" id="msg" class="form-control" placeholder="Event">
-    </div>
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">4:00PM</label>
-      <input type="text" id="msg" class="form-control" placeholder="Event">
-    </div>
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">5:00PM</label>
-      <input type="text" id="msg" class="form-control" placeholder="Event">
-    </div>
-     <div id="msg"></div>
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i" for="formGroupExampleInput2">6:00PM</label>
-      <input type="text" id="msg" class="form-control" placeholder="Event">
-    </div>
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label  div="i"  for="formGroupExampleInput2">7:00PM</label>
-      <input type="text" id="msg" class="form-control" placeholder="Event">
-    </div>
-    <div class="col-2">
-      <button type="button" id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<form>
-  <div class="form-row">
-    <div class="col-10">
-       <label div="i"  for="formGroupExampleInput2">8:00PM</label>
-      <input type="text" id="msg" class="form-control" placeholder="Event">
-    </div>
-    <div class="col-2">
-      <button type="button"  id="saveBtn" class="btn btn-primary">Save Event</button>
-    </div>
-  </div>
-</form>
-<div id="colorBlocks">
-    <div id="pasT" class="past"></div>
-    <div id="pT" class="present"></div>
-    <div id="fT" class="future"></div>
+    <div class= "time-block form-control">8:00AM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">9:00AM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">10:00AM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">11:00AM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">12:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+
+    <div class= "time-block form-control">1:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">2:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">3:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">4:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">5:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+    
+    <div class= "time-block form-control">6:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">7:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">8:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">9:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">10:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+    <div class= "time-block form-control">11:00PM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+
+    <div class= "time-block form-control">12:00AM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+
+    <div id="colorBlocks">
+    <div class="past"></div>
+    <div class="present"></div>
+    <div class="future"></div>
   </div>
   
 </div>

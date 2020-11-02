@@ -16,7 +16,7 @@ var timeBlock = document.getElementById("#time");
 time.append(m.format(" h:mm A")); 
 console.log(timeBlock)
 
-// body of calendar
+// body of calendar timeblock
 var colorTime=document.getElementById("#i")
 
 var presentT =moment().format('h:mm:ss a');
@@ -28,37 +28,56 @@ console.log(futureT)
 var pastT = moment().subtract(1, 'hour').calendar(); 
 console.log(pastT)
 
-var yellow = $('#pT');
-var red = $('#pasT');
-var green = $('#fT');
-
-var calInpt = document.getElementById(".form-control");
-var saveBtn = document.getElementById("#saveBtn");
-var msgDiv = document.querySelector("#msg");
+var yellow = $(".present");
+var red = $('.past');
+var green = $('.future');
 
 
 
-// presentT = text(moment().format('h:mm:ss a'));
 
 
-function displayMessage(type, message) {
-  msgDiv.textContent = message;
-  msgDiv.setAttribute("class", type);
-}
+   function mySave() {
+        var myContent = document.getElementById("myTextarea").value;
+        localStorage.setItem("myContent", myContent);
+      }
+      function myLoad() {
+        var myContent = localStorage.getItem("myContent");
+        document.getElementById("myTextarea").value = myContent;
+      }
 
-$(saveBtn).on("click", function() {
-  preventDefault();
 
-  var user = {
-    first: msgDiv.value.trim(),
-      
-  };
 
-  console.log(user);
   
-  localStorage.setItem("user", JSON.stringify(user));
 
-  var user = JSON.parse(localStorage.getItem("user"));
-  
-  return user;
-});
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// if (key && value) {
+//     localStorage.setItem("text", "storage");
+//     location.reload();
+// }
+//     })
+
+// for(let i=0; i<localStorage.length; i++) {
+//     const key = localStorage.key(i);
+//     const value = localStorage.getItem(key);
+//     isOutput.innerHTML += '${key}: ${value}<br />';
+    
+
+// }
+

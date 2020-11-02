@@ -5,7 +5,7 @@ body {
   
 }
 
-.form-row {
+textarea{
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -27,14 +27,17 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
-.description{
+.form-control{
   white-space: pre-wrap;
 }
 
 .time-block{
   text-align: center;
   border-radius: 15px;
+  font: 200;
+  color: #06AED5;
+  margin-top: 10px;
+  
 }
 
 .row {
@@ -64,13 +67,14 @@ textarea{
   color: white;
 }
 
-.saveBtn {
+.btn btn-primary {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
 }
+
 
 .saveBtn i:hover {
   font-size: 20px;
