@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,7 +38,18 @@
       
       <div class="container">
 
-    <div class= "time-block form-control">8:00AM</div>
+    <div data-time="8" class= "time-block  form-control">8:00AM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button id="color" class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+      
+
+    </form>
+
+    <div data-time="9" class= "time-block form-control ">9:00AM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -46,7 +59,7 @@
 
     </form>
 
-    <div class= "time-block form-control">9:00AM</div>
+    <div data-time="10" class= "time-block form-control">10:00AM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -56,7 +69,7 @@
 
     </form>
 
-    <div class= "time-block form-control">10:00AM</div>
+    <div data-time="11" class= "time-block form-control">11:00AM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -66,17 +79,7 @@
 
     </form>
 
-    <div class= "time-block form-control">11:00AM</div>
-    <form id="evnt-note"></form>
-
-    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
-    <p></p>
-    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
-    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
-
-    </form>
-
-    <div class= "time-block form-control">12:00PM</div>
+    <div data-time="12" class= "time-block form-control">12:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -87,7 +90,7 @@
     </form>
 
 
-    <div class= "time-block form-control">1:00PM</div>
+    <div data-time="13" class= "time-block form-control">1:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -97,7 +100,7 @@
 
     </form>
 
-    <div class= "time-block form-control">2:00PM</div>
+    <div data-time="14" class= "time-block form-control">2:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -107,7 +110,7 @@
 
     </form>
 
-    <div class= "time-block form-control">3:00PM</div>
+    <div data-time="15" class= "time-block form-control">3:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -117,7 +120,7 @@
 
     </form>
 
-    <div class= "time-block form-control">4:00PM</div>
+    <div data-time="16" class= "time-block form-control">4:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -127,7 +130,7 @@
 
     </form>
 
-    <div class= "time-block form-control">5:00PM</div>
+    <div data-time="17" class= "time-block form-control">5:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -137,7 +140,7 @@
 
     </form>
     
-    <div class= "time-block form-control">6:00PM</div>
+    <div data-time="18" class= "time-block form-control">6:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -147,7 +150,7 @@
 
     </form>
 
-    <div class= "time-block form-control">7:00PM</div>
+    <div data-time="19" class= "time-block form-control">7:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -157,7 +160,7 @@
 
     </form>
 
-    <div class= "time-block form-control">8:00PM</div>
+    <div data-time="20" class= "time-block form-control">8:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -167,7 +170,7 @@
 
     </form>
 
-    <div class= "time-block form-control">9:00PM</div>
+    <div data-time="21" class= "time-block form-control">9:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -177,7 +180,7 @@
 
     </form>
 
-    <div class= "time-block form-control">10:00PM</div>
+    <div data-time="22" class= "time-block form-control">10:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -187,18 +190,7 @@
 
     </form>
 
-    <div class= "time-block form-control">11:00PM</div>
-    <form id="evnt-note"></form>
-
-    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
-    <p></p>
-    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
-    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
-
-    </form>
-
-
-    <div class= "time-block form-control">12:00AM</div>
+    <div data-time="23" class= "time-block form-control">11:00PM</div>
     <form id="evnt-note"></form>
 
     <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
@@ -209,10 +201,27 @@
     </form>
 
 
+    <div data-time="24" class= "time-block form-control">12:00AM</div>
+    <form id="evnt-note"></form>
+
+    <textarea class= "form-control"  id="myTextarea" rows="2" cols="90"></textarea>
+    <p></p>
+    <button class="btn btn-outline-success" onclick="mySave()">Save Event</button>
+    <button class="btn btn-outline-info" onclick="myLoad()">Show Event</button>
+
+    </form>
+
+      <div>
+
+
+      </div>
+      </div>
     <div id="colorBlocks">
-    <div class="past"></div>
-    <div class="present"></div>
-    <div class="future"></div>
+    <div class="past">
+    <div class="present">
+    <div class="future">
+
+    </div>
   </div>
   
 </div>
